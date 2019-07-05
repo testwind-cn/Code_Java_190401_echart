@@ -10,4 +10,4 @@ import="com.fin.data_tool.DataSet"
     String data = new DataSet().getData(name1,name2,name3);
 // String data = new DataSet().getData("test0",name2,name3);
     out.print(data);
-%>+
+%>
