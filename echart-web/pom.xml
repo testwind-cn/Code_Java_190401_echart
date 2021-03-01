@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.plj</groupId>
@@ -27,18 +27,41 @@
       <scope>test</scope>
     </dependency>
 
-
     <dependency>
-      <groupId>com.plj.tools</groupId>
-      <artifactId>plj-tools-java</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.47</version>
       <scope>compile</scope>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.json/json -->
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20201115</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.webjars.bower/echarts -->
+    <!--
+    <dependency>
+      <groupId>org.webjars.bower</groupId>
+      <artifactId>echarts</artifactId>
+      <version>4.7.0</version>
+    </dependency>
+    -->
+    <!--
+    <script type="text/javascript" src="/webjars/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="/webjars/echarts/4.0.4/dist/echarts.js"></script>
+    <script type="text/javascript" src="/webjars/echarts/4.0.4/dist/echarts.common.min.js"></script>
+
+    ————————————————
+    版权声明：本文为CSDN博主「JokerDa」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+    原文链接：https://blog.csdn.net/qq_35641192/article/details/80616099
+    -->
   </dependencies>
 
   <build>
-    <finalName>echart-web</finalName>
+    <finalName>echart_01_war</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
